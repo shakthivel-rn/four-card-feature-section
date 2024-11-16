@@ -1,0 +1,155 @@
+:root {
+    --light-red: #EA5454;
+    --aqua: #44D3D2;
+    --yellow: #FCAE4A;
+    --blue: #549EF2;
+    --grey: #4D4F62;
+
+    --font-weight-extra-light: 200;
+    --font-weight-regular: 400;
+    --font-weight-semi-bold: 600;
+
+    --font-style: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--font-style);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 19.43rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.card-section>div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.card-container {
+    width: 19.43rem;
+    height: 13.87rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-container>.text-card-content {
+    margin-top: 0.125rem;
+}
+
+.card-container>img {
+    width: 3.56rem;
+    height: 3.56rem;
+    align-self: flex-end;
+}
+
+.card-container-light-red {
+    border-top: 0.25rem solid var(--light-red);
+}
+
+.card-container-aqua {
+    border-top: 0.25rem solid var(--aqua);
+}
+
+.card-container-yellow {
+    border-top: 0.25rem solid var(--yellow);
+}
+
+.card-container-blue {
+    border-top: 0.25rem solid var(--blue);
+}
+
+.text-title-light {
+    font-weight: var(--font-weight-extra-light);
+    line-height: auto;
+    letter-spacing: 0.015rem;
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+
+.text-title-bold {
+    font-weight: var(--font-weight-semi-bold);
+    line-height: auto;
+    letter-spacing: 0.015rem;
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+
+.text-subtitle-light {
+    font-weight: var(--font-weight-regular);
+    line-height: 1.56rem;
+    letter-spacing: 0.006rem;
+    font-size: 0.93rem;
+    color: var(--grey);
+}
+
+.text-card-title {
+    font-weight: var(--font-weight-semi-bold);
+    line-height: auto;
+    letter-spacing: 0rem;
+    font-size: 1.25rem;
+    color: var(--grey);
+}
+
+.text-card-content {
+    font-weight: var(--font-weight-regular);
+    line-height: 1.43rem;
+    letter-spacing: 0.005rem;
+    font-size: 0.81rem;
+    color: var(--grey);
+}
+
+@media (min-width: 1025px) {
+    .header-section {
+        width: 34.37rem;
+    }
+
+    .card-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+
+    .card-container {
+        width: 21.87rem;
+        height: 15.62rem;
+        padding: 1rem;
+    }
+
+    .text-title-light,
+    .text-title-bold {
+        font-size: 2.25rem;
+    }
+}
